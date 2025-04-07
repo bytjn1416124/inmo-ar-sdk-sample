@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        // INMO SDK repository dependency (updated URL)
+        maven { url 'https://gitee.com/inmolens/inmo-ar-sdk/raw/master' }
+    }
+}
+rootProject.name = "arsdksample"
+include ':app'
